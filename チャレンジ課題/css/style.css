@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+/* ここからCSS */
+
+/* br {
+    font-size: 5px;
+    color: yellowgreen;
+} */
+
+/* グローバルメニューの間隔の開け方がわからん */
+.menu {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    justify-content: space-between;
+}
+.title {
+    margin-top: 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+h1 {
+    margin-top: 100px;
+}
+
+.subtheme {
+    font-size: 15px;
+    color: gray;
+    padding: 5px 5px 5px 0px;
+}
+
+p {
+    font-size: 15px;
+    color: gray;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+ul li {
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+h2 {
+    padding: 100px 0px;
+    color: gray;
+    font-size: 30px;
+    max-width: 960px;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.page {
+    display: flex;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 30px 0px;
+    justify-content: space-around;
+}
+
+.pagenumber {
+    border: 1px solid gray;
+    justify-content: space-between;
+    padding: 15px;
+}
